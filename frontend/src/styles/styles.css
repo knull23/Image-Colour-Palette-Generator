@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.upload-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Select Image Button */
+.upload-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3; /* Dark Blue */
+}
+
+/* Upload Button */
+.upload-image-btn {
+  padding: 10px 20px;
+  background-color: #28a745; /* Green */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.upload-image-btn:hover {
+  background-color: #1e7e34; /* Dark Green */
+}
+
+.upload-image-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Image Preview */
+.image-preview img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #0b0909;
+}
+
+/* Color Palette */
+.color-palette {
+  margin-top: 20px;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+  border: 1px solid #0b0909;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+/* Individual Color Box */
+.color-box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 4px;
+  border: 2px solid #000;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+}
+
+/* Tooltip for RGB Values */
+.tooltip {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
